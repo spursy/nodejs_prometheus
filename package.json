@@ -4,28 +4,27 @@
   "main": "src",
   "description": "Prometheus example",
   "author": "RisingStack, Inc.",
+  "pre-commit": "lint:staged",
   "scripts": {
     "start": "node src",
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",
     "lint:staged": "lint-staged"
   },
-  "pre-commit": "lint:staged",
   "lint-staged": {
-    "linters": {
-      "*.js":[
-        "eslint --ignore-path .gitignore --fix",
-        "git add"
-      ]
-    },
-    "ignore": []
+    "*.js": [
+      "eslint --ignore-path .gitignore --fix",
+      "git add"
+    ]
   },
   "dependencies": {
     "express": "4.15.3",
     "prom-client": "9.1.1"
   },
   "devDependencies": {
-    "eslint": "3.19.0"
+    "eslint": "3.19.0",
+    "lint-staged": "^9.2.0",
+    "pre-commit": "^1.2.2"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,9 @@
 # Example Prometheus Monitoring
 
+:smile:
+:blush:
+:raising_hand:
+
 ## Goal
 
 Setup monitoring with [Prometheus](https://prometheus.io) and [Grafana](https://grafana.com).
